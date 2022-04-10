@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--        LinearLayout是ViewGroup的一个子类，用于放置水平或者垂直方向的子视图部件
+
+    * 1. 放置方向由属性android:orientation设定。  LinearLayout里的子布局按照XML里定义的顺序显示在屏幕
+    * 2. 所有的Views都需要用到android:layout_width和android:layout_height这两个属性来设置自身的大小
+    
+    * 3. 由于LinearLayout是整个视图的根布局，所以其宽和高都应充满整个屏幕的，通过指定width 和 height属性为"match_parent"
+    该值表示子View扩张自己width和height来匹配父控件的width和height
+-->
+
+<LinearLayout 
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+</LinearLayout>

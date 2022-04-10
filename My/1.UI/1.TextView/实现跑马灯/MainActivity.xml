@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:text="你好啊 你好啊 你好啊 你好啊 你好啊 你好啊 你好啊"
+        android:gravity="center_vertical"
+        android:shadowColor="#ffff0000"
+        android:shadowRadius="3.0"
+        android:shadowDx="10.0"
+        android:shadowDy="10.0"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:clickable="true">
+        <requestFocus/>
+    </TextView>
+    <!--   单行显示
+           在哪里省略文本: marquee 就是 跑马灯形式
+           无限跑下去
+           是否可以获取焦点
+           在触碰模式下是否可以焦距
+
+           以上做完之后还是没有实现跑马灯,因为这个TextView没有获取焦点, 解决方法:
+           1. clickable = "true" : 只在当点击的时刻启动
+           2. 在后面添加: <requestFocus/> 自动跑马灯
+           -->
+</LinearLayout>

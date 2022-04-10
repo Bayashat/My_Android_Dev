@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--   ImageView 主要属性:
+        src: 设置图片资源
+        scaleType: 设置图片缩放类型
+        maxHeight: 最大高度
+        maxWidth: 最大宽度
+        adjustViewBounds: 调整View的界限
+     -->
+
+
+</LinearLayout>

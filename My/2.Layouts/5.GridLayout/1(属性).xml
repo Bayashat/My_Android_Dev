@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--GridLayout
+    与TableLayout 类似,但比他更灵活.
+    * TableLayout 会有一个局限性,就是只能将两个列进行合并,对行做不了
+    * 而GridLayout 即可以把2个行进行合并,也能将2个列进行合并. 而且布局也更加的灵活
+
+    <1> 常见属性:
+    1. Orientataion: 设置水平显示还是垂直显示
+    2. columnCount: 设置一行的最多显示个数
+    3. rowCount: 设置列的显示个数
+
+    <2> 子控件属性:
+    1. layout_column: 显示在第几列
+    2. layout_columnSpan: 横向跨几列
+    3. layout_columnWeight: 横向剩余空间分配方式
+    4. layout_gravity: 在网格中的显示位置
+    5. layout_row: 显示在第几行
+    6. layout_rowSpan: 横向跨几行
+    7. layout_rowWeight: 纵向剩余空间分配方式
+    -->
+
+
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:columnCount="5"
+    tools:context=".MainActivity">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="3"
+        android:layout_gravity="fill"
+        android:layout_rowWeight="1"
+        android:text="First"/>
+    <Button
+        android:layout_column="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="1"
+        android:text="Second"/>
+    <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Third"/>
+    <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+    android:text="Fourth"/>
+    <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Fifth"/>
+
+
+
+
+</GridLayout>

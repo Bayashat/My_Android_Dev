@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--   LinearLayout 常见属性:
+    1.Orientataion: 布局中组建的排列方式,默认是Horizontal
+    2.Gravity: 控制组件所包含的子元素的对齐方式,可多个组合
+    3.Layout_gravity: 控制该组件在父容器里的对齐方式
+    4.background: 为该组件设置一个背景图片, 或者是直接用颜色覆盖
+    5.divider: 分割线
+    6.showDivides 设置分割线所在的位置, none, begiining, end, middle
+    7.dividerPadding 设置分割线的padding
+    8.layout_weight: 该属性是用来等比例的划分区域
+ -->
+
+ <!--线性布局:
+    当我们创建了4个LinearLayout时, 通过orientataion="vertical"而一个接一个下面的1排列了-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_weight="2"
+        android:background="#ffff0000"></LinearLayout>
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:background="#ff00ff00"></LinearLayout>
+    <LinearLayout
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+        android:layout_weight="1"
+    android:background="#ff0000ff"></LinearLayout>
+
+</LinearLayout>
